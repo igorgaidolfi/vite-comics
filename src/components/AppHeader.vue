@@ -3,7 +3,49 @@ export default {
     name: 'AppHeader',
     data() {
         return {
+            menu: [
+                {
+                    label: 'Characters',
+                    selected: false
+                },
+                {
+                    label: 'Comics',
+                    selected: true
+                },
+                {
+                    label: 'Movies',
+                    selected: false
+                },
+                {
+                    label: 'Tv',
+                    selected: false
+                },
+                {
+                    label: 'Games',
+                    selected: false
+                },
+                {
+                    label: 'Collectibles',
+                    selected: false
+                },
+                {
+                    label: 'Videos',
+                    selected: false
+                },
+                {
+                    label: 'Fans',
+                    selected: false
+                },
+                {
+                    label: 'News',
+                    selected: false
+                },
+                {
+                    label: 'Shop',
+                    selected: false
+                },
 
+            ]
         }
     }
 }
@@ -13,21 +55,14 @@ export default {
         <div class="container d-flex">
             <img src="../assets/img/dc-logo.png" alt="">
             <ul>
-                <li>Characters</li>
-                <li>Comics</li>
-                <li>Movies</li>
-                <li>Tv</li>
-                <li>Games</li>
-                <li>Collectibles</li>
-                <li>Videos</li>
-                <li>Fans</li>
-                <li>News</li>
-                <li>Shop</li>
+                <li v-for="(link,index) in menu" :key="index" :class="link.selected == true ? 'selected' : ''">{{link.label}}</li>
             </ul>
         </div>
     </header>
 </template>
 <style lang="scss">
+@use '../styles/partials/variables' as *;
+
 header {
     margin: 20px 0;
 }
@@ -45,9 +80,15 @@ ul {
 
 li {
     padding: 0 15px;
+    text-transform: uppercase;
+    font-size: small;
 }
 
 img {
     height: 75px;
+}
+
+.selected {
+    color: $primary;
 }
 </style>
