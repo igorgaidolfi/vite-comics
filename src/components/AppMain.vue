@@ -9,10 +9,19 @@ export default {
 }
 </script>
 <template lang="">
-  <div>
-    
-  </div>
+    <main>
+        <div class="container">
+            <h1>-->Content goes here<--</h1>
+        </div>
+    </main>
 </template>
-<style lang="">
+<style lang="scss">
+main {
+    background-color: black;
+    color: white;
+}
 
+h1 {
+    padding: 50px 0;
+}
 </style>
