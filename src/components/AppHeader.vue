@@ -52,10 +52,10 @@ export default {
 </script>
 <template lang="">
     <header>
-        <div class="container d-flex">
-            <img src="../assets/img/dc-logo.png" alt="">
-            <ul>
-                <li v-for="(link,index) in menu" :key="index" :class="link.selected == true ? 'selected' : ''">{{link.label}}</li>
+        <div class="container d-flex menu">
+            <img src="../assets/img/dc-logo.png" alt="" class="logo">
+            <ul class="d-flex">
+                <li class="list" v-for="(link,index) in menu" :key="index" :class="link.selected == true ? 'selected' : ''">{{link.label}}</li>
             </ul>
         </div>
     </header>
@@ -67,24 +67,22 @@ header {
     margin: 20px 0;
 }
 
-.d-flex {
-    display: flex;
+.menu {
     align-items: center;
     justify-content: space-between;
 }
 
 ul {
-    display: flex;
     list-style: none;
 }
 
-li {
+.list {
     padding: 0 15px;
     text-transform: uppercase;
     font-size: small;
 }
 
-img {
+.logo {
     height: 75px;
 }
 
