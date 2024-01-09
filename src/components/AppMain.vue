@@ -135,7 +135,7 @@ main {
 
 .jumbotron {
     background-image: url(../assets/img/jumbotron.jpg);
-    height: 320px;
+    height: 420px;
     background-size: cover;
 
 }

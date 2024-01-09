@@ -19,47 +19,39 @@ export default {
                         <li>Movies</li>
                         <li>Tv</li>
                         <li>Games</li>
-                        <li>Collectibles</li>
                         <li>Videos</li>
-                        <li>Fans</li>
                         <li>News</li>
-                        <li>Shop</li>
                     </ul>
-                <h4>DC COMICS</h4>
+                <h4>SHOP</h4>
                     <ul>
-                        <li>Fans</li>
-                        <li>News</li>
-                        <li>Shop</li>
+                        <li>Shop Dc</li>
+                        <li>Shop Dc Collectibles</li>
                     </ul>
             </div>
             <div class="space">
-                <h4>DC COMICS</h4>
+                <h4>DC</h4>
                     <ul>
-                        <li>Characters</li>
-                        <li>Comics</li>
-                        <li>Movies</li>
-                        <li>Tv</li>
-                        <li>Games</li>
-                        <li>Collectibles</li>
-                        <li>Videos</li>
-                        <li>Fans</li>
-                        <li>News</li>
-                        <li>Shop</li>
+                        <li>Terms Of Use</li>
+                        <li>Privacy policy(new)</li>
+                        <li>Ad Choices</li>
+                        <li>Advertising</li>
+                        <li>Jobs</li>
+                        <li>Subscriptions</li>
+                        <li>Talent Workshops</li>
+                        <li>CPSC Certificates</li>
+                        <li>Ratings</li>
+                        <li>Shop Help</li>
+                        <li>Contact Us</li>
                     </ul>
             </div>
             <div>
-                <h4>DC COMICS</h4>
+                <h4>SITES</h4>
                     <ul>
-                        <li>Characters</li>
-                        <li>Comics</li>
-                        <li>Movies</li>
-                        <li>Tv</li>
-                        <li>Games</li>
-                        <li>Collectibles</li>
-                        <li>Videos</li>
-                        <li>Fans</li>
-                        <li>News</li>
-                        <li>Shop</li>
+                        <li>DC</li>
+                        <li>MAD Magazine</li>
+                        <li>DC Kids</li>
+                        <li>DC Universe</li>
+                        <li>DC Power Visa</li>
                     </ul>
             </div>
         </div>
@@ -93,6 +85,13 @@ footer {
 
 .top {
     padding: 40px 0;
+    background-image: url(../assets/img/dc-logo-bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+
+    li {
+        color: grey;
+    }
 }
 
 .space {
