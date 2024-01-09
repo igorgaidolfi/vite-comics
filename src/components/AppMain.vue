@@ -125,20 +125,32 @@ main {
 
 }
 
-.blue-label {
-    background-color: $primary;
-    position: absolute;
-    text-transform: $upper;
-    font-size: x-large;
-    font-weight: $weight-700;
-    padding: 10px 20px;
-    top: -27px;
-    left: 0
-}
-
 .comic-container {
     flex-wrap: wrap;
     position: relative;
+
+    .blue-label {
+        background-color: $primary;
+        position: absolute;
+        text-transform: $upper;
+        font-size: x-large;
+        font-weight: $weight-700;
+        padding: 10px 20px;
+        top: -27px;
+        left: 0
+    }
+
+    .blue-button {
+        background-color: $primary;
+        margin: 40px auto 20px auto;
+        text-transform: $upper;
+        padding: 10px 60px;
+        color: white;
+        border: 0px;
+        font-weight: $weight-700;
+
+
+    }
 }
 
 .blueBanner {
