@@ -99,13 +99,28 @@ export default {
         </div>
         <div class="blueBanner">
             <div class="container">
-                <ul class="d-flex">
-                    <li>item</li>
-                    <li>item</li>
-                    <li>item</li>
-                    <li>item</li>
-                    <li>item</li>
-                </ul>
+                <div class="d-flex">
+                    <div class="item d-flex">
+                        <img src="../assets/img/buy-comics-digital-comics.png" alt="digital-comics">
+                        <span>digital comics</span>
+                    </div>
+                    <div class="item d-flex">
+                        <img src="../assets/img/buy-comics-merchandise.png" alt="merchandise">
+                        <span>dc merchandise</span>
+                    </div>
+                    <div class="item d-flex">
+                        <img src="../assets/img/buy-comics-subscriptions.png" alt="subscription">
+                        <span>subscription</span>
+                    </div>
+                    <div class="item d-flex">
+                        <img src="../assets/img/buy-comics-shop-locator.png" alt="comic-shop-locator">
+                        <span>comic shop locator</span>
+                    </div>
+                    <div class="item d-flex">
+                        <img src="../assets/img/buy-dc-power-visa.svg" alt="dc-power-visa">
+                        <span>dc power visa</span>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -156,13 +171,24 @@ main {
 .blueBanner {
     background-color: $primary;
 
-    li {
-        padding: 50px;
+    .d-flex {
+        justify-content: space-between;
+        align-items: center;
     }
 
-    ul {
-        justify-content: center;
-        justify-content: space-between;
+    .item {
+        padding: 50px 20px;
+        align-items: center;
+
+
+        img {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        span {
+            text-transform: $upper;
+        }
     }
 }
 </style>
