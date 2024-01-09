@@ -111,13 +111,13 @@ footer {
         background-color: transparent;
         border-color: $primary;
         color: white;
-        font-weight: bold;
+        font-weight: $weight-700;
         padding: 12px;
     }
 
     span {
         color: $primary;
-        font-weight: bold;
+        font-weight: $weight-700;
         font-size: medium;
         margin-right: 5px;
     }

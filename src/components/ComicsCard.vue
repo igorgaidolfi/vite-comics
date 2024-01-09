@@ -19,12 +19,12 @@ export default {
     img {
         height: 200px;
         width: 200px;
-        margin: 40px 0px 15px 0px;
+        margin: 50px 0px 15px 0px;
     }
 
     p {
         text-transform: uppercase;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 }
 </style>

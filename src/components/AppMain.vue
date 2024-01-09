@@ -87,12 +87,16 @@ export default {
 </script>
 <template lang="">
     <main>
+        <div class="jumbotron">
+
+        </div>
         <div class="container">
             <div class="comic-container d-flex">
+                <span class="blue-label">current series</span>
                 <ComicsCard v-for="comic, index in comics" :key="index" :series="comic"/>
             </div>
         </div>
-        <div class="imBlue">
+        <div class="blueBanner">
             <div class="container">
                 <ul class="d-flex">
                     <li>item</li>
@@ -113,15 +117,30 @@ main {
     color: white;
 }
 
-h1 {
-    padding: 50px 0;
+.jumbotron {
+    background-image: url(../assets/img/jumbotron.jpg);
+    height: 320px;
+    background-size: cover;
+
+}
+
+.blue-label {
+    background-color: $primary;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: $weight-700;
+    padding: 10px 20px;
+    top: -27px;
+    left: 0
 }
 
 .comic-container {
     flex-wrap: wrap;
+    position: relative;
 }
 
-.imBlue {
+.blueBanner {
     background-color: $primary;
 
     li {
