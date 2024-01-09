@@ -78,7 +78,7 @@ ul {
 
 .list {
     padding: 0 15px;
-    text-transform: uppercase;
+    text-transform: $upper;
     font-size: small;
 }
 

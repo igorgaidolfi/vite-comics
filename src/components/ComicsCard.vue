@@ -23,7 +23,7 @@ export default {
     }
 
     p {
-        text-transform: uppercase;
+        text-transform: $upper;
         margin-bottom: 10px;
     }
 }

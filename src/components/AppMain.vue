@@ -94,6 +94,7 @@ export default {
             <div class="comic-container d-flex">
                 <span class="blue-label">current series</span>
                 <ComicsCard v-for="comic, index in comics" :key="index" :series="comic"/>
+                <button class="blue-button">load more</button>
             </div>
         </div>
         <div class="blueBanner">
@@ -127,7 +128,7 @@ main {
 .blue-label {
     background-color: $primary;
     position: absolute;
-    text-transform: uppercase;
+    text-transform: $upper;
     font-size: x-large;
     font-weight: $weight-700;
     padding: 10px 20px;
