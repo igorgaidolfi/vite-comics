@@ -84,7 +84,12 @@ export default {
 <template lang="">
     <main>
         <div class="container">
-            <h1>-->Content goes here<--</h1>
+            <div class="comic-container d-flex">
+                <div class="card" v-for="comic, index in comics" :key="index">
+                    <img :src="comic.thumb" alt="comic.series">
+                    <p>{{comic.series}}</p>
+                </div>
+            </div>
         </div>
         <div class="imBlue">
             <div class="container">
@@ -109,6 +114,25 @@ main {
 
 h1 {
     padding: 50px 0;
+}
+
+.comic-container {
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(100%/6);
+
+    img {
+        height: 200px;
+        width: 200px;
+        margin: 40px 0px 15px 0px;
+    }
+
+    p {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
 }
 
 .imBlue {
